@@ -15,7 +15,7 @@
     <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.7.1" />
     <plugin name="cordova-plugin-legacy-whitelist" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-deeplinks" source="npm" spec="~1.1.1" />
-    <plugin name="StartApp" value="com.snapshimi.plugins.startapp.StartApp"/>
+    <plugin name="StartApp" value="com.phonegap.plugins.startapp.StartApp"/>
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="res/icon/android/drawable-mdpi-icon.png" />
