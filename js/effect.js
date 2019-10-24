@@ -1,8 +1,8 @@
 function loadok() {
     $("#loading").fadeOut();
-    $("#snlink").fadeIn();
+    $("#snlink").slideDown(1000);
 }
 
 function showsite() {
-   $("#snlink").fadeOut(); 
+   $("#snlink").slideUp("slow");
 }
