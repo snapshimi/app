@@ -34,7 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        document.getElementById("instagramOpen").addEventListener("click", instagramOpen);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -49,30 +48,3 @@ var app = {
     }
 };
 
-function instagramOpen() {
-   var url = 'https://instagram.com';
-   var target = '_blank';
-   var options = "location = no"
-   var ref = cordova.InAppBrowser.open(url, target, options);
-   
-   ref.addEventListener('loadstart', loadstartCallback);
-   ref.addEventListener('loadstop', loadstopCallback);
-   ref.addEventListener('loaderror', loaderrorCallback);
-   ref.addEventListener('exit', exitCallback);
-
-   function loadstartCallback(event) {
-      console.log('Loading started: '  + event.url)
-   }
-
-   function loadstopCallback(event) {
-      console.log('Loading finished: ' + event.url)
-   }
-
-   function loaderrorCallback(error) {
-      console.log('Loading error: ' + error.message)
-   }
-
-   function exitCallback() {
-      console.log('Browser is closed...')
-   }
-}
