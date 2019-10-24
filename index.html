@@ -21,7 +21,11 @@
                       script-src 'self' 'unsafe-inline'" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="plugins/startapp/startapp.js"></script>
+    <script type="text/javascript">
+        function instagramOpen(){
+            window.open('http://www.instagram.com', '_system'); return false;        
+        }
+    </script>
 
 </head>
 
@@ -40,11 +44,7 @@
         <!-- <a style="position:fixed; bottom: 0; z-index: 9999;" class="btn btn-block" href="#" onclick="window.open('http://www.instagram.com', '_system'); return false;">www.instagram.com</a>-->       
         
     </div>
-    <script type="text/javascript">
-        function instagramOpen(){
-            window.open('http://www.instagram.com', '_system'); return false;        
-        }
-    </script>
+    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/effect.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
