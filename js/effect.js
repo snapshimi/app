@@ -1,6 +1,10 @@
 function loadok() {
     $("#loading").fadeOut();
-    $("#snlink").slideDown(1000);
+    if(document.getElementById("snapshimiframe").src == "http://snapshimi.com"){
+        $("#snlink").slideDown(1000);
+    }else{
+        $("#snlink").slideUp("slow")   
+    }
 }
 
 function showsite() {
