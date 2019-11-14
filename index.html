@@ -31,6 +31,7 @@
                 <img src="img/logo-snapshimi-load.png" width="210" alt="" />
                 <br> <br> <br> <br> 
                 <div class="loader"></div>
+                <div id="furl"></div>
                 <br> <br>
             <div id="appcopyright">نسخه ۱.۶</div>
             </div>
@@ -57,6 +58,9 @@
     </div>
     
     <script type="text/javascript" src="cordova.js"></script>
+    <script>
+      document.getElementById("furl").innerHTML = document.getElementById("snapshimiframe").src;  
+    </script>
     <script type="text/javascript" src="js/effect.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
