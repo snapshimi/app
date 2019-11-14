@@ -3,15 +3,6 @@
 
 <head>
     <title>Snapshimi</title>
-    <!-- <meta charset="utf-8" / -->
-    <!-- <meta name="format-detection" content="telephone=no" / -->
-    <!-- <meta name="msapplication-tap-highlight" content="no" / -->
-    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" / -->
-    <!-- <meta name="viewport" content="width=device-width" />  -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';" />
-    -->
-    
     <meta http-equiv="content-type" content="text/html; charset=utf8">
     <meta http-equiv="content-type" content="text/html; charset=utf8">
     <meta name="viewport" content="width=device-width" />
@@ -36,7 +27,7 @@
             <div id="appcopyright">نسخه ۱.۶</div>
             </div>
         </div>
-        <div id="snlink" style="display: none;">
+        <div id="snlink">
             <h3>ما را دنبال کنید...</h3>
             <div style="width: 90%; margin: 20px auto 10% auto; text-align: center;">
                 <div>
@@ -53,15 +44,10 @@
             <div><button type="button" onclick="showsite()">باشه برای بعدا!</button></div>
         </div>
         <iframe id="snapshimiframe" onload="loadok()" src="http://snapshimi.com"></iframe>
-        <!-- <a style="position:fixed; bottom: 0; z-index: 9999;" class="btn btn-block" href="#" onclick="window.open('http://www.instagram.com', '_system'); return false;">www.instagram.com</a>-->
 
     </div>
     
     <script type="text/javascript" src="cordova.js"></script>
-    <script>
-        var x = document.getElementById("snapshimiframe").src;
-      document.getElementById("furl").innerHTML = x;  
-    </script>
     <script type="text/javascript" src="js/effect.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
