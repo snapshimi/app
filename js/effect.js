@@ -3,7 +3,7 @@ function loadok() {
     if(document.getElementById("snapshimiframe").src == "http://snapshimi.com/"){
         $("#snlink").slideDown(1000);
     }else{
-        $("#snlink").slideUp("slow")   
+        $("#snlink").hide();   
     }
 }
 
