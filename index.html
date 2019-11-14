@@ -49,7 +49,7 @@
                     <span>snapshimi@</span>
                 </div>
             </div>
-            <div><button type="button" onclick="showsite()">باشه برای بعدا!</button></div>
+            <div id="snmsg"></div>
         </div>
         <iframe id="snapshimiframe" onload="loadok()" src="http://snapshimi.com"></iframe>
         <!-- <a style="position:fixed; bottom: 0; z-index: 9999;" class="btn btn-block" href="#" onclick="window.open('http://www.instagram.com', '_system'); return false;">www.instagram.com</a>-->
@@ -58,6 +58,11 @@
     
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/effect.js"></script>
+    <script>
+        if(window.location.href == "/"){
+            document.getElementById("snmsg").innerHTML = '<button type="button" onclick="showsite()">باشه برای بعدا!</button>';
+        }
+    </script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
